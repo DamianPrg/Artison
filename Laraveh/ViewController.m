@@ -149,5 +149,12 @@
 - (IBAction)migrateStatusList:(id)sender {
     [self executeCommand:@"migrate:status"];
 }
+- (IBAction)coreChangeNamespace:(id)sender {
+
+    NSString* newNamespace = [self.namespaceTextField stringValue];
+
+    [self executeCommand:[NSString stringWithFormat:@"app:name %@", newNamespace]];
+
+}
 
 @end

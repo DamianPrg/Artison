@@ -21,6 +21,7 @@
 @property (strong) IBOutlet NSTextView *commandResult;
 @property (strong) IBOutlet NSComboBox *typeComboBox;
 @property (strong) IBOutlet NSTextField *makeNameTextField;
+@property (strong) IBOutlet NSTextField *namespaceTextField;
 
 @end
 
