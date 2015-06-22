@@ -29,6 +29,11 @@
 @property (weak) IBOutlet NSTableView *migrationTableView;
 @property (weak) IBOutlet NSTextField *migrationColumnName;
 @property (weak) IBOutlet NSComboBox *migrationColumnType;
+@property (weak) IBOutlet NSButton *migrationNullableColumn;
+@property (weak) IBOutlet NSButton *migrationDefaultValueCheckBox;
+@property (weak) IBOutlet NSTextField *migrationDefaultValue;
+
+-(NSString*)migrationSource;
 
 @end
 

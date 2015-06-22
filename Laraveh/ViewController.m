@@ -173,6 +173,11 @@
     
 }
 
+-(NSString*)migrationSource
+{
+    return [NSString stringWithFormat:@"<?php ?>"];
+}
+
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
 
     return self.namesArray.count;

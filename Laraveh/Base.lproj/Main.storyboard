@@ -238,11 +238,11 @@
                                 <tabViewItems>
                                     <tabViewItem label="Main / Misc" identifier="2" id="lDY-Xn-ULg">
                                         <view key="view" id="tGF-qG-lDp">
-                                            <rect key="frame" x="10" y="33" width="705" height="412"/>
+                                            <rect key="frame" x="10" y="33" width="315" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <box autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="1Pq-5d-g52">
-                                                    <rect key="frame" x="6" y="38" width="338" height="360"/>
+                                                    <rect key="frame" x="6" y="-374" width="338" height="360"/>
                                                     <view key="contentView">
                                                         <rect key="frame" x="1" y="1" width="336" height="358"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -415,7 +415,7 @@
                                                     <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </box>
                                                 <box hidden="YES" autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-P7-Q6m">
-                                                    <rect key="frame" x="370" y="228" width="329" height="84"/>
+                                                    <rect key="frame" x="370" y="-184" width="329" height="84"/>
                                                     <view key="contentView">
                                                         <rect key="frame" x="1" y="1" width="327" height="82"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,7 +452,7 @@
                                                     <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </box>
                                                 <box autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="rv8-YR-aVj">
-                                                    <rect key="frame" x="370" y="314" width="329" height="84"/>
+                                                    <rect key="frame" x="370" y="-98" width="329" height="84"/>
                                                     <view key="contentView">
                                                         <rect key="frame" x="1" y="1" width="327" height="82"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -737,6 +737,14 @@
                                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                             </textField>
+                                                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xae-JJ-E42">
+                                                                <rect key="frame" x="18" y="60" width="163" height="22"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Default value" drawsBackground="YES" id="10W-ZX-qCt">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
                                                             <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Us5-86-Kyl">
                                                                 <rect key="frame" x="189" y="87" width="115" height="26"/>
                                                                 <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Select" drawsBackground="YES" numberOfVisibleItems="7" id="HFm-jh-PPf">
@@ -746,6 +754,10 @@
                                                                     <objectValues>
                                                                         <string>String</string>
                                                                         <string>Big Int</string>
+                                                                        <string>Float</string>
+                                                                        <string>Integer</string>
+                                                                        <string>JSON</string>
+                                                                        <string>REMEMBER TOKEN</string>
                                                                     </objectValues>
                                                                 </comboBoxCell>
                                                             </comboBox>
@@ -758,6 +770,20 @@
                                                                 <connections>
                                                                     <action selector="addColumn:" target="XfG-lQ-9wD" id="Ttn-zG-ZQY"/>
                                                                 </connections>
+                                                            </button>
+                                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXr-UI-LW7">
+                                                                <rect key="frame" x="16" y="12" width="72" height="18"/>
+                                                                <buttonCell key="cell" type="check" title="Nullable" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="P8F-hK-G13">
+                                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                            </button>
+                                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-Ov-iob">
+                                                                <rect key="frame" x="16" y="33" width="103" height="18"/>
+                                                                <buttonCell key="cell" type="check" title="Default value" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ynT-0B-mAo">
+                                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
                                                             </button>
                                                         </subviews>
                                                     </view>
@@ -821,7 +847,7 @@
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="8gY-0l-Noz" viewBased="YES" id="UL3-jX-DyX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="669" height="0.0"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -965,6 +991,9 @@
                         <outlet property="makeNameTextField" destination="iiG-Gm-fDg" id="skb-KO-s3u"/>
                         <outlet property="migrationColumnName" destination="cmq-pf-coy" id="xz6-uU-Bhg"/>
                         <outlet property="migrationColumnType" destination="Us5-86-Kyl" id="OUp-Lo-rRz"/>
+                        <outlet property="migrationDefaultValue" destination="xae-JJ-E42" id="4An-sk-noN"/>
+                        <outlet property="migrationDefaultValueCheckBox" destination="Xd1-Ov-iob" id="g6A-dR-zPd"/>
+                        <outlet property="migrationNullableColumn" destination="BXr-UI-LW7" id="rc8-gv-2ve"/>
                         <outlet property="migrationTableView" destination="UL3-jX-DyX" id="iuL-hA-6JQ"/>
                         <outlet property="namespaceTextField" destination="RFK-v1-gZr" id="KlI-Ub-W7W"/>
                         <outlet property="typeComboBox" destination="c1f-tS-4AY" id="3tX-Rj-rZa"/>
