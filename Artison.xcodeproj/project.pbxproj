@@ -12,7 +12,6 @@
 		2D3E7E481B35CAB3001C35C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E7E471B35CAB3001C35C6 /* ViewController.m */; };
 		2D3E7E4A1B35CAB3001C35C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3E7E491B35CAB3001C35C6 /* Images.xcassets */; };
 		2D3E7E4D1B35CAB3001C35C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3E7E4B1B35CAB3001C35C6 /* Main.storyboard */; };
-		2D3E7E591B35CAB3001C35C6 /* LaravehTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E7E581B35CAB3001C35C6 /* LaravehTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +35,6 @@
 		2D3E7E491B35CAB3001C35C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2D3E7E4C1B35CAB3001C35C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D3E7E521B35CAB3001C35C6 /* ArtisonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtisonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D3E7E571B35CAB3001C35C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D3E7E581B35CAB3001C35C6 /* LaravehTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaravehTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				2D3E7E3E1B35CAB3001C35C6 /* Laraveh */,
-				2D3E7E551B35CAB3001C35C6 /* LaravehTests */,
 				2D3E7E3D1B35CAB3001C35C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,23 +91,6 @@
 			children = (
 				2D3E7E401B35CAB3001C35C6 /* Info.plist */,
 				2D3E7E441B35CAB3001C35C6 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2D3E7E551B35CAB3001C35C6 /* LaravehTests */ = {
-			isa = PBXGroup;
-			children = (
-				2D3E7E581B35CAB3001C35C6 /* LaravehTests.m */,
-				2D3E7E561B35CAB3001C35C6 /* Supporting Files */,
-			);
-			path = LaravehTests;
-			sourceTree = "<group>";
-		};
-		2D3E7E561B35CAB3001C35C6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2D3E7E571B35CAB3001C35C6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,7 +204,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3E7E591B35CAB3001C35C6 /* LaravehTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
