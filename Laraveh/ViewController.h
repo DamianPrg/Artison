@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<NSTableViewDelegate, NSTableViewDataSource>
 
 // laravel's project path where app, resources folder, etc... are.
 @property NSString* projectPath;
@@ -18,10 +18,17 @@
 // execute artisan command example: make:controller
 -(void) executeCommand:(NSString*)command;
 
+// migration arrays
+@property NSMutableArray* namesArray;
+@property NSMutableArray* typesArray;
+
 @property (strong) IBOutlet NSTextView *commandResult;
 @property (strong) IBOutlet NSComboBox *typeComboBox;
 @property (strong) IBOutlet NSTextField *makeNameTextField;
 @property (strong) IBOutlet NSTextField *namespaceTextField;
+@property (weak) IBOutlet NSTableView *migrationTableView;
+@property (weak) IBOutlet NSTextField *migrationColumnName;
+@property (weak) IBOutlet NSComboBox *migrationColumnType;
 
 @end
 
