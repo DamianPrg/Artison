@@ -190,6 +190,7 @@
     {
         NSTableCellView* cellView = [tableView makeViewWithIdentifier:@"cell" owner:self];
         cellView.textField.stringValue = [self.namesArray objectAtIndex:row];
+        cellView.textField.editable = YES;
         return cellView;
     }
     
@@ -197,16 +198,12 @@
     {
         NSTableCellView* cellView = [tableView makeViewWithIdentifier:@"cell2" owner:self];
         cellView.textField.stringValue = [self.typesArray objectAtIndex:row];
+        cellView.textField.editable = YES;
         return cellView;
     }
     
 
     return nil;
-}
-
-- (BOOL)tableView:(NSTableView *)tableView shouldEditTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
-{
-    return YES;
 }
 
 @end
