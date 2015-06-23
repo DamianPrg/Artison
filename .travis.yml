@@ -1,1 +1,3 @@
 language: objective-c
+xcode_project: Artison.xcodeproj # path to your xcodeproj folder
+xcode_scheme: Artison
