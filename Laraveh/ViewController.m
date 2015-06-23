@@ -204,4 +204,9 @@
     return nil;
 }
 
+- (BOOL)tableView:(NSTableView *)tableView shouldEditTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
+{
+    return YES;
+}
+
 @end
