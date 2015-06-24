@@ -8,48 +8,9 @@
 		<data>
 		2t6B5OwgGNXHUhHwSsMHEYh46Vk=
 		</data>
-		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aafLzhbvFeyAZFt4q2GdIvn42mQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VKGn9xrw3Wj/3WRl6OBaPWboPRk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wyQ+szqXV7DTAQAKlE5ZihCI4Go=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2x3ydsYEwokgSfDaoqBx98NDjiY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-	</dict>
-	<key>files2</key>
-	<dict>
-		<key>Resources/AppIcon.icns</key>
+		<key>Resources/Assets.car</key>
 		<data>
-		2t6B5OwgGNXHUhHwSsMHEYh46Vk=
+		3tFzini42w7uPXW28YWTdYEXXd8=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
@@ -64,7 +25,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VKGn9xrw3Wj/3WRl6OBaPWboPRk=
+			oj4/xnkle9MhxchvWnDVLOXBBRE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -73,7 +34,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wyQ+szqXV7DTAQAKlE5ZihCI4Go=
+			dXfIyWpnSy0Pfjx+ShUum49UldY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -82,7 +43,54 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2x3ydsYEwokgSfDaoqBx98NDjiY=
+			o34EXGS+vk4t7LW8kNaMTgs5Chg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>Resources/AppIcon.icns</key>
+		<data>
+		2t6B5OwgGNXHUhHwSsMHEYh46Vk=
+		</data>
+		<key>Resources/Assets.car</key>
+		<data>
+		3tFzini42w7uPXW28YWTdYEXXd8=
+		</data>
+		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aafLzhbvFeyAZFt4q2GdIvn42mQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oj4/xnkle9MhxchvWnDVLOXBBRE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dXfIyWpnSy0Pfjx+ShUum49UldY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o34EXGS+vk4t7LW8kNaMTgs5Chg=
 			</data>
 			<key>optional</key>
 			<true/>
