@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/DamianPrg/Artison](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DamianPrg/Artison?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-GUI for artisan command line tool for OSX and some additions to make laravel developemnt easier
+GUI for artisan command line tool for OSX and some **additions to make laravel developemnt easier**
 
 # Screens
 ![Main](http://i.imgur.com/D1myRq8.png)
