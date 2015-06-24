@@ -18,22 +18,11 @@
 // execute artisan command example: make:controller
 -(void) executeCommand:(NSString*)command;
 
-// migration arrays
-@property NSMutableArray* namesArray;
-@property NSMutableArray* typesArray;
-
 @property (strong) IBOutlet NSTextView *commandResult;
 @property (strong) IBOutlet NSComboBox *typeComboBox;
 @property (strong) IBOutlet NSTextField *makeNameTextField;
 @property (strong) IBOutlet NSTextField *namespaceTextField;
-@property (weak) IBOutlet NSTableView *migrationTableView;
-@property (weak) IBOutlet NSTextField *migrationColumnName;
-@property (weak) IBOutlet NSComboBox *migrationColumnType;
-@property (weak) IBOutlet NSButton *migrationNullableColumn;
-@property (weak) IBOutlet NSButton *migrationDefaultValueCheckBox;
-@property (weak) IBOutlet NSTextField *migrationDefaultValue;
 
--(NSString*)migrationSource;
 
 @end
 

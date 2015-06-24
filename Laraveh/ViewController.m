@@ -44,13 +44,6 @@
     }
 
     [self.view.window setTitle:[NSString stringWithFormat:@"Artison - (%@)", self.projectPath]];
-    
-    // setup
-    //self.namesArray = [NSMutableArray arrayWithObject:@"TEST name"];
-    //self.typesArray = [NSMutableArray arrayWithObject:@"TEST type"];
-    
-    self.namesArray = [NSMutableArray arrayWithCapacity:50];
-    self.typesArray = [NSMutableArray arrayWithCapacity:50];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -164,46 +157,6 @@
 
 }
 
-- (IBAction)addColumn:(id)sender {
-    
-    [self.namesArray addObject:self.migrationColumnName.stringValue];
-    [self.typesArray addObject:[self.migrationColumnType objectValueOfSelectedItem]];
-    
-    [self.migrationTableView reloadData];
-    
-}
 
--(NSString*)migrationSource
-{
-    return [NSString stringWithFormat:@"<?php ?>"];
-}
-
-- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-
-    return self.namesArray.count;
-
-}
-
--(NSView*)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    
-    if([tableColumn.identifier isEqualToString:@"cell"])
-    {
-        NSTableCellView* cellView = [tableView makeViewWithIdentifier:@"cell" owner:self];
-        cellView.textField.stringValue = [self.namesArray objectAtIndex:row];
-        cellView.textField.editable = YES;
-        return cellView;
-    }
-    
-    else if([tableColumn.identifier isEqualToString:@"cell2"])
-    {
-        NSTableCellView* cellView = [tableView makeViewWithIdentifier:@"cell2" owner:self];
-        cellView.textField.stringValue = [self.typesArray objectAtIndex:row];
-        cellView.textField.editable = YES;
-        return cellView;
-    }
-    
-
-    return nil;
-}
 
 @end

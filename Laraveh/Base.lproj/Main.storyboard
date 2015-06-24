@@ -414,7 +414,7 @@
                                                     <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                                     <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </box>
-                                                <box hidden="YES" autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-P7-Q6m">
+                                                <box autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-P7-Q6m">
                                                     <rect key="frame" x="370" y="228" width="329" height="84"/>
                                                     <view key="contentView">
                                                         <rect key="frame" x="1" y="1" width="327" height="82"/>
@@ -509,13 +509,13 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <box autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="N26-t4-0jG">
-                                                    <rect key="frame" x="202" y="151" width="301" height="122"/>
+                                                    <rect key="frame" x="158" y="130" width="388" height="165"/>
                                                     <view key="contentView">
-                                                        <rect key="frame" x="1" y="1" width="299" height="120"/>
+                                                        <rect key="frame" x="1" y="1" width="386" height="163"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpe-Fv-X4J">
-                                                                <rect key="frame" x="16" y="88" width="38" height="17"/>
+                                                                <rect key="frame" x="16" y="131" width="38" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name" id="PU4-Pv-n2V">
                                                                     <font key="font" metaFont="cellTitle"/>
                                                                     <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -523,7 +523,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1x-6V-Rsl">
-                                                                <rect key="frame" x="16" y="56" width="38" height="17"/>
+                                                                <rect key="frame" x="16" y="99" width="38" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Type" id="hUP-d9-5Xl">
                                                                     <font key="font" metaFont="cellTitle"/>
                                                                     <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
@@ -531,7 +531,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iiG-Gm-fDg">
-                                                                <rect key="frame" x="73" y="86" width="208" height="22"/>
+                                                                <rect key="frame" x="160" y="129" width="208" height="22"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Name of Controller, Request..." drawsBackground="YES" id="eaC-tr-L7P">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -539,8 +539,8 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1f-tS-4AY">
-                                                                <rect key="frame" x="74" y="51" width="210" height="26"/>
-                                                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Select" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="uxw-Lq-CrQ">
+                                                                <rect key="frame" x="161" y="95" width="210" height="26"/>
+                                                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Select" drawsBackground="YES" completes="NO" numberOfVisibleItems="7" id="uxw-Lq-CrQ">
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -555,11 +555,12 @@
                                                                         <string>Provider</string>
                                                                         <string>Request</string>
                                                                         <string>Seeder</string>
+                                                                        <string>Event</string>
                                                                     </objectValues>
                                                                 </comboBoxCell>
                                                             </comboBox>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-GK-QP7">
-                                                                <rect key="frame" x="94" y="12" width="111" height="25"/>
+                                                                <rect key="frame" x="138" y="12" width="111" height="25"/>
                                                                 <buttonCell key="cell" type="squareTextured" title="Make" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rNX-Ue-wem">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
@@ -735,23 +736,35 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3s-HD-Lkv">
-                                                    <rect key="frame" x="306" y="350" width="93" height="50"/>
-                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Artison 0.2" id="hJN-89-Weo">
+                                                    <rect key="frame" x="321" y="351" width="62" height="50"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Artison" id="hJN-89-Weo">
                                                         <font key="font" metaFont="system" size="18"/>
                                                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3yL-W3-pcR">
-                                                    <rect key="frame" x="235" y="351" width="252" height="17"/>
-                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Artison programer: Damian Balandowski" id="HnY-1O-ZL0">
+                                                    <rect key="frame" x="233" y="352" width="264" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Artison programmer: Damian Balandowski" id="HnY-1O-ZL0">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o0x-sZ-wsO">
+                                                    <rect key="frame" x="233" y="327" width="155" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version:                     0.2" id="ERX-HN-g9U">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GcA-n7-zVz">
+                                                    <rect key="frame" x="274" y="130" width="183" height="141"/>
+                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="eBu-GH-VxH"/>
+                                                </imageView>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-su-rGt">
-                                                    <rect key="frame" x="187" y="32" width="330" height="17"/>
+                                                    <rect key="frame" x="200" y="32" width="330" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Thank your everybody for testing Artison and using it" id="lkN-xK-eFd">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
@@ -759,7 +772,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vg5-Fa-T3V">
-                                                    <rect key="frame" x="154" y="-3" width="396" height="32"/>
+                                                    <rect key="frame" x="167" y="-3" width="396" height="32"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Artison uses artisan command line tool which is included with all laravel projects." id="vvu-4J-Xi7">
                                                         <font key="font" metaFont="system" size="10"/>
                                                         <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -789,4 +802,7 @@
             <point key="canvasLocation" x="210.5" y="752.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon" width="512" height="512"/>
+    </resources>
 </document>
