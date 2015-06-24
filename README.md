@@ -15,3 +15,9 @@ Note: To use this app you need to set your's project folder permission so Your u
 
 ![Permissions](http://i.imgur.com/23uP7ow.png?1)
 
+Roadmap for 1.0 (If I have enough time...)
+- Migration designer (very simple designer for migrations)
+- Editing migrations which were created using Artison?
+- Package manager support (http://packalyst.com)?
+- Add Laravel IDE helper to root directory of project, and maybe cmd line support too?
+
