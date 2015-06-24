@@ -14,6 +14,7 @@ GUI for artisan command line tool for OSX and some additions to make laravel dev
 Note: To use this app you need to set your's project folder permission so Your user can read/write and also needs to be applied to all sub folders/files.
 
 ![Permissions](http://i.imgur.com/O2g6fQG.png?1)
+Note: It can work for some users out-of-box, without setting this, but if it doesnt work then you need to set correct permissions.
 
 Roadmap for 1.0 (If I have enough time...)
 - Migration designer (very simple designer for migrations)
