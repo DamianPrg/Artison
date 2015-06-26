@@ -52,7 +52,8 @@
 
 -(void) executeCommand:(NSString*)command {
 
-    NSString* artisanCMDpath = [NSString stringWithFormat:@"php %@/artisan %@", self.projectPath, command];
+    // no interaction
+    NSString* artisanCMDpath = [NSString stringWithFormat:@"php %@/artisan %@ -n", self.projectPath, command];
 
     [self runCommand:artisanCMDpath];
 }
@@ -86,7 +87,7 @@
 
     [self.commandResult scrollLineDown:self];
 }
-- (IBAction)makeController:(id)sender {
+- (IBAction)makeMake:(id)sender {
 
     NSString* selectedOptionValue = (NSString*)[[self.typeComboBox objectValueOfSelectedItem] lowercaseString];
 
@@ -94,9 +95,28 @@
     NSString* makeCommand = [NSString stringWithFormat:@"make:%@ %@", selectedOptionValue, name];
 
     // NSLog(makeCommand);
+    if([selectedOptionValue isEqualToString:@"job"])
+    {
+        if(self.jobQueuedCheckBox.state == NSOnState)
+        {
+            makeCommand = [NSString stringWithFormat:@"make:%@ %@ --queued", selectedOptionValue, name];
+        }
+    }
 
     [self executeCommand:makeCommand];
 
+}
+- (IBAction)makeSelectedType:(id)sender {
+    NSString* selectedOptionValue = (NSString*)[[self.typeComboBox objectValueOfSelectedItem] lowercaseString];
+
+    if([selectedOptionValue isEqualToString:@"job"])
+    {
+        [self.jobQueuedCheckBox setHidden:NO];
+    }
+    else
+    {
+        [self.jobQueuedCheckBox setHidden:YES];
+    }
 }
 - (IBAction)coreServe:(id)sender {
     [self executeCommand:@"serve"];

@@ -22,6 +22,7 @@
 @property (strong) IBOutlet NSComboBox *typeComboBox;
 @property (strong) IBOutlet NSTextField *makeNameTextField;
 @property (strong) IBOutlet NSTextField *namespaceTextField;
+@property (strong) IBOutlet NSButton *jobQueuedCheckBox;
 
 
 @end

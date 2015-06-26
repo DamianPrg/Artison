@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <development version="6300" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <scenes>
@@ -202,11 +203,11 @@
                                         <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-cQ-McU">
                                             <rect key="frame" x="7" y="8" width="700" height="86"/>
                                             <clipView key="contentView" misplaced="YES" id="13P-Oz-JM5">
-                                                <rect key="frame" x="1" y="1" width="238" height="133"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="685" height="86"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" richText="NO" findStyle="panel" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="o6a-et-c0L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="238" height="133"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="685" height="86"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <size key="minSize" width="685" height="86"/>
@@ -222,8 +223,8 @@
                                                 <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="R31-Iw-z1n">
-                                                <rect key="frame" x="223" y="1" width="16" height="133"/>
+                                            <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="R31-Iw-z1n">
+                                                <rect key="frame" x="685" y="0.0" width="15" height="86"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -414,7 +415,7 @@
                                                     <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                                     <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </box>
-                                                <box autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-P7-Q6m">
+                                                <box hidden="YES" autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-P7-Q6m">
                                                     <rect key="frame" x="370" y="228" width="329" height="84"/>
                                                     <view key="contentView">
                                                         <rect key="frame" x="1" y="1" width="327" height="82"/>
@@ -558,6 +559,9 @@
                                                                         <string>Event</string>
                                                                     </objectValues>
                                                                 </comboBoxCell>
+                                                                <connections>
+                                                                    <action selector="makeSelectedType:" target="XfG-lQ-9wD" id="ocG-iT-Ibm"/>
+                                                                </connections>
                                                             </comboBox>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-GK-QP7">
                                                                 <rect key="frame" x="138" y="12" width="111" height="25"/>
@@ -566,8 +570,15 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                                 <connections>
-                                                                    <action selector="makeController:" target="XfG-lQ-9wD" id="tde-gx-fPD"/>
+                                                                    <action selector="makeMake:" target="XfG-lQ-9wD" id="uc1-dt-kn6"/>
                                                                 </connections>
+                                                            </button>
+                                                            <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhx-eb-8q5">
+                                                                <rect key="frame" x="163" y="66" width="98" height="18"/>
+                                                                <buttonCell key="cell" type="check" title="Job Queued" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Ga0-41-b5T">
+                                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
                                                             </button>
                                                         </subviews>
                                                     </view>
@@ -788,6 +799,7 @@
                     </view>
                     <connections>
                         <outlet property="commandResult" destination="o6a-et-c0L" id="EBh-ZL-mYe"/>
+                        <outlet property="jobQueuedCheckBox" destination="Xhx-eb-8q5" id="FjM-oZ-aro"/>
                         <outlet property="makeNameTextField" destination="iiG-Gm-fDg" id="skb-KO-s3u"/>
                         <outlet property="namespaceTextField" destination="RFK-v1-gZr" id="KlI-Ub-W7W"/>
                         <outlet property="typeComboBox" destination="c1f-tS-4AY" id="3tX-Rj-rZa"/>
