@@ -103,12 +103,40 @@
         }
     }
 
+    // create migration for model if checkbox is checked.
+    if([selectedOptionValue isEqualToString:@"model"])
+    {
+        if(self.modelCreateNewMigrationCheckBox.state == NSOnState)
+        {
+            makeCommand = [NSString stringWithFormat:@"make:%@ %@ -m", selectedOptionValue, name];
+        }
+    }
+
+    if([selectedOptionValue isEqualToString:@"migration"])
+    {
+        if(self.migrationTableNameTextField.stringValue.length > 0)
+        {
+            makeCommand = [NSString stringWithFormat:@"make:%@ %@ --create %@",
+                           selectedOptionValue, name, self.migrationTableNameTextField.stringValue];
+        }
+    }
+
     [self executeCommand:makeCommand];
 
 }
 - (IBAction)makeSelectedType:(id)sender {
+
+    // clear name textfield
+    self.makeNameTextField.stringValue = @"";
+
+    // and clear addintional controls
+    self.jobQueuedCheckBox.state = NSOffState;
+    self.modelCreateNewMigrationCheckBox.state = NSOffState;
+    self.migrationTableNameTextField.stringValue = @"";
+
     NSString* selectedOptionValue = (NSString*)[[self.typeComboBox objectValueOfSelectedItem] lowercaseString];
 
+    // show/unshow job queued checkbox
     if([selectedOptionValue isEqualToString:@"job"])
     {
         [self.jobQueuedCheckBox setHidden:NO];
@@ -116,6 +144,26 @@
     else
     {
         [self.jobQueuedCheckBox setHidden:YES];
+    }
+
+    // show/unshow create new migration for model
+    if([selectedOptionValue isEqualToString:@"model"])
+    {
+        [self.modelCreateNewMigrationCheckBox setHidden:NO];
+    }
+    else
+    {
+        [self.modelCreateNewMigrationCheckBox setHidden:YES];
+    }
+
+    // show/hide tablename textfield
+    if([selectedOptionValue isEqualToString:@"migration"])
+    {
+        [self.migrationTableNameTextField setHidden:NO];
+    }
+    else
+    {
+        [self.migrationTableNameTextField setHidden:YES];
     }
 }
 - (IBAction)coreServe:(id)sender {

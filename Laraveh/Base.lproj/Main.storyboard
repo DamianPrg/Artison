@@ -330,7 +330,7 @@
                                                             </button>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYQ-4Z-hFU">
                                                                 <rect key="frame" x="16" y="330" width="242" height="17"/>
-                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Serve the application on the PHP development server" id="L7z-GN-pCk">
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Run the database migrations" id="L7z-GN-pCk">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -580,6 +580,21 @@
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
                                                             </button>
+                                                            <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXP-BR-Jcu">
+                                                                <rect key="frame" x="161" y="66" width="207" height="22"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Table name (optional)" drawsBackground="YES" id="qKU-0o-gqp">
+                                                                    <font key="font" metaFont="system"/>
+                                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
+                                                            <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOd-Pe-i02">
+                                                                <rect key="frame" x="16" y="54" width="277" height="18"/>
+                                                                <buttonCell key="cell" type="check" title="Create a new migration file for the model." bezelStyle="regularSquare" imagePosition="left" inset="2" id="qLm-bo-lka">
+                                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                    <font key="font" metaFont="system"/>
+                                                                </buttonCell>
+                                                            </button>
                                                         </subviews>
                                                     </view>
                                                     <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
@@ -801,6 +816,8 @@
                         <outlet property="commandResult" destination="o6a-et-c0L" id="EBh-ZL-mYe"/>
                         <outlet property="jobQueuedCheckBox" destination="Xhx-eb-8q5" id="FjM-oZ-aro"/>
                         <outlet property="makeNameTextField" destination="iiG-Gm-fDg" id="skb-KO-s3u"/>
+                        <outlet property="migrationTableNameTextField" destination="QXP-BR-Jcu" id="85T-vS-Fls"/>
+                        <outlet property="modelCreateNewMigrationCheckBox" destination="lOd-Pe-i02" id="beJ-Wc-QBX"/>
                         <outlet property="namespaceTextField" destination="RFK-v1-gZr" id="KlI-Ub-W7W"/>
                         <outlet property="typeComboBox" destination="c1f-tS-4AY" id="3tX-Rj-rZa"/>
                     </connections>

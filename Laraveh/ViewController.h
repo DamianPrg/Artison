@@ -23,7 +23,8 @@
 @property (strong) IBOutlet NSTextField *makeNameTextField;
 @property (strong) IBOutlet NSTextField *namespaceTextField;
 @property (strong) IBOutlet NSButton *jobQueuedCheckBox;
-
+@property (strong) IBOutlet NSButton *modelCreateNewMigrationCheckBox;
+@property (strong) IBOutlet NSTextField *migrationTableNameTextField;
 
 @end
 
