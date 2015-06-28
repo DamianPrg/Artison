@@ -224,6 +224,9 @@
     [self executeCommand:[NSString stringWithFormat:@"app:name %@", newNamespace]];
 
 }
+- (IBAction)migrateSeed:(id)sender {
+    [self executeCommand:@"migrate --seed"];
+}
 
 
 

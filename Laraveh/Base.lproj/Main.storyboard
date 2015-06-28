@@ -243,13 +243,13 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <box autoresizesSubviews="NO" fixedFrame="YES" title="Box" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="1Pq-5d-g52">
-                                                    <rect key="frame" x="6" y="38" width="338" height="360"/>
+                                                    <rect key="frame" x="6" y="5" width="338" height="393"/>
                                                     <view key="contentView">
-                                                        <rect key="frame" x="1" y="1" width="336" height="358"/>
+                                                        <rect key="frame" x="1" y="1" width="336" height="391"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C01-T9-wul">
-                                                                <rect key="frame" x="8" y="236" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="269" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title="Optimize" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="g33-T0-zDa">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -259,7 +259,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5PW-DE-oBy">
-                                                                <rect key="frame" x="8" y="87" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="120" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title="Generate key" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rcS-1n-O7w">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -269,7 +269,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qbv-xo-Kl3">
-                                                                <rect key="frame" x="8" y="50" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="83" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title="Clear compiled views" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zj8-PI-kEa">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -279,7 +279,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ns-ee-orh">
-                                                                <rect key="frame" x="8" y="199" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="232" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title=" Remove route cache" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oRK-1J-6FC">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -289,7 +289,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyY-uV-5L4">
-                                                                <rect key="frame" x="8" y="275" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="308" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title="Cache clear" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="C5m-zT-ctH">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -299,7 +299,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODd-Qe-UAw">
-                                                                <rect key="frame" x="8" y="124" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="157" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title="Seed database" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rsU-3P-ycg">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -309,7 +309,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pb2-Zh-Yni">
-                                                                <rect key="frame" x="8" y="313" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="346" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title="Migrate" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JKj-Fw-UJV">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -319,7 +319,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1D-cs-Yvs">
-                                                                <rect key="frame" x="8" y="160" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="193" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title="Create a route cache file" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fWx-tV-pZb">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -329,7 +329,7 @@
                                                                 </connections>
                                                             </button>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYQ-4Z-hFU">
-                                                                <rect key="frame" x="16" y="330" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="363" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Run the database migrations" id="L7z-GN-pCk">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -337,7 +337,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uh8-SD-963">
-                                                                <rect key="frame" x="16" y="292" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="325" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Flush the application cache" id="UFo-Ib-h6c">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -345,7 +345,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNT-UI-INh">
-                                                                <rect key="frame" x="16" y="255" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="288" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Optimize the framework for better performance" id="mOo-oN-CQy">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -353,7 +353,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ut-Px-VUF">
-                                                                <rect key="frame" x="16" y="216" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="249" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Serve the application on the PHP development server" id="sWh-oz-3vo">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -361,7 +361,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2yB-n7-xkd">
-                                                                <rect key="frame" x="16" y="178" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="211" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Create a route cache file for faster route registration" id="IOa-Aa-Uqv">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -369,7 +369,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SsL-3K-Pfs">
-                                                                <rect key="frame" x="16" y="140" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="173" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Seed the database with records" id="BzU-iR-oxY">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -377,7 +377,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HAS-be-Sun">
-                                                                <rect key="frame" x="16" y="104" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="137" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Set the application key" id="fTX-li-fBU">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -385,7 +385,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vLc-2N-8Zf">
-                                                                <rect key="frame" x="16" y="67" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="100" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Clear all compiled view files" id="cq8-py-lED">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -393,7 +393,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-8t-18U">
-                                                                <rect key="frame" x="16" y="30" width="242" height="17"/>
+                                                                <rect key="frame" x="16" y="63" width="242" height="17"/>
                                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Run the scheduled commands" id="1eJ-1H-Vi1">
                                                                     <font key="font" metaFont="miniSystem"/>
                                                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -401,7 +401,7 @@
                                                                 </textFieldCell>
                                                             </textField>
                                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bU5-Tn-Quq">
-                                                                <rect key="frame" x="8" y="13" width="320" height="19"/>
+                                                                <rect key="frame" x="8" y="46" width="320" height="19"/>
                                                                 <buttonCell key="cell" type="squareTextured" title=" Run scheduled commands" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Wb-Xi-JKz">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="smallSystem"/>
@@ -410,6 +410,24 @@
                                                                     <action selector="coreRunScheduledCommands:" target="XfG-lQ-9wD" id="3Js-Db-3Bi"/>
                                                                 </connections>
                                                             </button>
+                                                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-HV-Tpz">
+                                                                <rect key="frame" x="8" y="13" width="320" height="19"/>
+                                                                <buttonCell key="cell" type="squareTextured" title="Migrate and Seed" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZQf-rE-pwb">
+                                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                    <font key="font" metaFont="smallSystem"/>
+                                                                </buttonCell>
+                                                                <connections>
+                                                                    <action selector="migrateSeed:" target="XfG-lQ-9wD" id="Pch-Ub-8eW"/>
+                                                                </connections>
+                                                            </button>
+                                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOw-Ln-jBt">
+                                                                <rect key="frame" x="16" y="30" width="242" height="17"/>
+                                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Run the database migrations and seed database" id="df6-lB-m8n">
+                                                                    <font key="font" metaFont="miniSystem"/>
+                                                                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                </textFieldCell>
+                                                            </textField>
                                                         </subviews>
                                                     </view>
                                                     <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
