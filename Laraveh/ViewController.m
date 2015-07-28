@@ -228,6 +228,9 @@
     [self executeCommand:@"migrate --seed"];
 }
 
+- (IBAction)generateEvents:(id)sender {
+    [self executeCommand:@"event:generate"];
+}
 
 
 @end
